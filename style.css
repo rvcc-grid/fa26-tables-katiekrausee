@@ -1,3 +1,160 @@
+/* General page styling */
 body {
-  background-color: aliceblue;
+  background-color: #090B12;
+  color: #EAE6F2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+/* Header styling */
+header {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* Subtitle styling */
+.subtitle {
+  color: #8875B8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* Purple divider */
+.divider {
+  width: 80px;
+  height: 2px;
+  background-color: #7765A8;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+/* Music artwork */
+.music-artwork {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  border: 1px solid #34304D;
+}
+
+/* Smaller screens */
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .music-artwork {
+    height: 160px;
+  }
+}
+
+h1 {
+  color: #D5C9F0;
+  font-size: 42px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.intro {
+  color: #AAA5BB;
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Table container */
+.table-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow-x: auto;
+  background-color: #11182B;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Table styling */
+.tg {
+  width: 100%;
+  border-collapse: collapse;
+  color: #EAE6F2;
+  font-size: 14px;
+}
+
+/* Table headings */
+.tg th {
+  background-color: #292344;
+  color: #D5C9F0;
+  font-weight: bold;
+  text-align: left;
+  padding: 16px 12px;
+  border: 1px solid #46405E;
+}
+
+/* Table data */
+.tg td {
+  padding: 15px 12px;
+  border: 1px solid #34334D;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.6;
+}
+
+/* Alternate row colors */
+.tg tbody tr:nth-child(even) {
+  background-color: #171D32;
+}
+
+.tg tbody tr:nth-child(odd) {
+  background-color: #11182B;
+}
+
+/* Hover effect */
+.tg tbody tr:hover {
+  background-color: #292344;
+}
+
+/* Table caption */
+.tg caption {
+  caption-side: bottom;
+  color: #AAA5BB;
+  font-size: 12px;
+  padding: 15px;
+  text-align: left;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 25px 12px;
+  }
+
+  h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  .table-container {
+    padding: 10px;
+  }
+
+  .tg {
+    font-size: 12px;
+    min-width: 650px;
+  }
+
+  .tg th,
+  .tg td {
+    padding: 10px 8px;
+  }
 }
